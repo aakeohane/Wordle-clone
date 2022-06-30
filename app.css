@@ -79,12 +79,13 @@ body {
   0% { opacity: 1; }
 }
 
-.win-notification {  
+.win-lose-notification {  
   padding: 15px 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   background:rgba(0,0,0, .7);
   font-weight: 900;
+  pointer-events: none;
 }
 
 .not-enough:before {
@@ -100,7 +101,7 @@ body {
 }
 
 .incorrect-guess:before {
-  
+  content: attr(notification);
 }
 
 .correct-guess:after {
@@ -113,6 +114,8 @@ body {
   border-radius: 50%;
   background: black;
   color: white;
+  cursor: pointer;
+  pointer-events: all;
 }
 
 /* board styling */
