@@ -14,9 +14,12 @@ h1 {
   justify-content: center;
 }
 
-body {
-  height: 75vh;
-  min-width: 500px;
+.wordle-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .board {
@@ -27,7 +30,7 @@ body {
 /* keyboard styling */
 
 #keyboard-cont {
-  margin: 1rem 0;
+  margin: 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;

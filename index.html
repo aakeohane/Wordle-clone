@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="app.css">
 </head>
 <body class="flex">
-  <h1>Wordle</h1>
+  <div class="wordle-board">
+    <h1>Wordle</h1>
+    <div class="board" id="board"></div>
+  </div>
   <div id="notification"></div>
-  <div class="board" id="board"></div>
   <div id="keyboard-cont">
     <div class="first-row">
         <button class="keyboard-button">q</button>
@@ -49,7 +51,5 @@
     </div>
 </div>
   <script src="app.js" type="module"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </body>
 </html>
