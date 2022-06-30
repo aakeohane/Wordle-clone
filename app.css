@@ -1,0 +1,158 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  height: 75vh;
+  min-width: 500px;
+}
+
+.board {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
+
+/* keyboard styling */
+
+#keyboard-cont {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#keyboard-cont div {
+  display: flex;
+}
+
+.second-row {
+  margin: 0.5rem 0;
+}
+
+.keyboard-button {
+  border: 2px solid white;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 0 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Notification styling */
+
+#notification {
+  position: absolute;
+  top:30%;
+  z-index: 1;
+  box-sizing:border-box;
+  color:white;  
+  text-align:center;
+  border-radius: 5px;
+}
+
+.temp-notification {  
+  padding: 15px 10px;
+  animation: fadeOut .5s;
+  animation-delay: 1.5s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background:rgba(0,0,0);
+  font-weight: 900;
+}
+
+@keyframes fadeOut {
+  100% { opacity: 0; }
+  0% { opacity: 1; }
+}
+
+.win-notification {  
+  padding: 15px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background:rgba(0,0,0, .7);
+  font-weight: 900;
+}
+
+.not-enough:before {
+  content:"Not enough letters";
+}
+
+.not-word:before {
+  content:"Not in words list!";
+}
+
+.correct-guess:before {
+  content: "Congrats, you got it! So smart!";
+}
+
+.incorrect-guess:before {
+  
+}
+
+.correct-guess:after {
+  content: "X";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  right: -10px;
+  padding: 4px 8px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+}
+
+/* board styling */
+
+.letter-row {
+  display: flex;
+}
+
+.letter-box {
+  height: 60px;
+  width: 60px;
+  margin: 2.5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid lightgray;
+  border-radius: 1px;
+}
+
+.chosen-letter {
+  border: 2px solid #6a6a6b;
+}
+
+.grey {
+  border: 2px solid #787c7e;
+  background-color: #787c7e;
+  color: white;
+}
+
+.yellow {
+  border: 2px solid #c9b458;
+  background-color: #c9b458;
+  color: white;
+}
+
+.green {
+  border: 2px solid #69aa65;
+  background-color: #69aa65;
+  color: white;
+}
