@@ -2,7 +2,7 @@
 
 Wordle has cemented itself into my morning routine and as I slowly became obsessed with solving this unassuming word puzzle, I thought how much fun it would be to code. I did use a tutorial to help me with some of the more complicated bits of UI such as the keyboard and the initial implementation of the boxes. I found some errors in the tutorial code and this is where I had to digress by modifying it to solve for the errors.
 
-Project: [Wordle](https://aakeohane.github.io/wordle-clone/)
+Project: [Wordle](https://aakeohane.github.io/Wordle-clone/)
 
 ## Features ✅
 
