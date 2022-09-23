@@ -32,4 +32,4 @@ I think going forward, I could add more features such as restarting the game to 
 
 ### Version
 
-1.0.0.0
+1.0.0
