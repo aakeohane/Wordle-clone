@@ -2,7 +2,8 @@
   touch-action: manipulation;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .wordle-board {
@@ -49,14 +51,15 @@ h1 {
 
 .keyboard-button {
   border: 2px solid white;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
-  padding: 1rem;
+  padding: 20px;
   border-radius: 5px;
   margin: 0 2px;
   cursor: pointer;
   text-transform: uppercase;
   color: black;
+  width: 100%;
 }
 
 /* Notification styling */
@@ -65,42 +68,46 @@ h1 {
   position: absolute;
   top: 30%;
   z-index: 1;
-  box-sizing:border-box;
-  color:white;  
-  text-align:center;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
   border-radius: 5px;
 }
 
-.temp-notification {  
+.temp-notification {
   padding: 15px 10px;
-  animation: fadeOut .5s;
+  animation: fadeOut 0.5s;
   animation-delay: 1.5s;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  background:rgba(0,0,0);
+  background: rgba(0, 0, 0);
   font-weight: 900;
 }
 
 @keyframes fadeOut {
-  100% { opacity: 0; }
-  0% { opacity: 1; }
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
 }
 
-.win-lose-notification {  
+.win-lose-notification {
   padding: 15px 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
-  background:rgba(0,0,0, .7);
+  background: rgba(0, 0, 0, 0.7);
   font-weight: 900;
   pointer-events: none;
 }
 
 .not-enough:before {
-  content:"Not enough letters";
+  content: "Not enough letters";
 }
 
 .not-word:before {
-  content:"Not in words list!";
+  content: "Not in words list!";
 }
 
 .correct-guess:before {
@@ -167,14 +174,15 @@ h1 {
   color: white;
 }
 
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
   h1 {
     font-size: 2.5em;
     margin: 10px;
   }
 
   .keyboard-button {
-    padding: .75rem calc(2vw);
+    padding: 0.75rem calc(2vw);
+    font-size: 18px;
   }
 
   .flex {
@@ -182,18 +190,13 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 350px) {
   .letter-box {
     width: 40px;
     height: 40px;
   }
-
-  
-}
-
-@media only screen and (max-width: 280px) { 
   .keyboard-button {
-    flex: 0 0 auto;
-    padding: .3rem .2rem;
+    /* flex: 0 0 auto; */
+    padding: 0.3rem 0.2rem;
   }
 }
